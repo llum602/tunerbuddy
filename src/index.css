@@ -1,0 +1,72 @@
+/*body and titles*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: #8a8a8a;
+  text-decoration: none;
+}
+
+.bgColor {
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0; 
+}
+
+#lBox {
+  float:left;
+}
+
+#instruBox {
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+  float: right;
+  background-color: rgb(107, 214, 196); 
+}
+
+/* header */
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  /*position: fixed;*/
+  width: 100%;
+  z-index: 3;
+}
+
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.header li {
+  display: block;
+  display: inline;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/*images*/
+.buddy {
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: rgba(0,0,0,.1);
+}
