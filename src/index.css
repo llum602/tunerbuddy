@@ -18,15 +18,22 @@ a {
 }
 
 #lBox {
-  float:left;
+  float: left;
+  width: 47%;
+  margin: 20px;
+  background-color: rgb(250, 250, 250);
 }
 
 #instruBox {
-  width: 50%;
+  width: 47%;
   height: 50%;
-  margin: 10px;
-  float: right;
-  background-color: rgb(107, 214, 196); 
+  margin: 20px;
+  float: left;
+  background-color: rgb(255, 255, 255); 
+}
+
+#buttonBox {
+  align-content: center;
 }
 
 /* header */
@@ -68,5 +75,13 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  background-color: rgba(0,0,0,.1);
+  background-color: transparent;
+}
+
+#buddyBox {
+  float: right;
+  width: 47%;
+  height: 50%;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
 }

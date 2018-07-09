@@ -2,14 +2,14 @@ import React from 'react'
 import './index.css';
 import './App.css'
 import { Link } from 'react-router-dom'
-import mainLogo from'./resumeLogoEdit.png';
+import sleepingBuddy from'./sleepingBuddy.png';
 
 
 
 const Home = () => (
     <div>
         <p>Home</p>
-        <img src={mainLogo} className={"buddy"} alt="TunerBud"/>
+        <img src={sleepingBuddy} className={"buddy"} alt="TunerBud"/>
     </div>
 )
 

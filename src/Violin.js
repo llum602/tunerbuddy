@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './index.css';
 import './App.css'
 import { Link } from 'react-router-dom'
-import { ButtonGroup, Button } from 'react-bootstrap'
+import { ButtonGroup, Button, ButtonToolbar, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
 import Synth, { Tone } from 'tone'
 import {Howl} from 'howler'
 
@@ -55,7 +55,7 @@ class Violin extends React.Component {
         if(soundA != null) {
             soundA.stop();
             soundA = null;
-            console.log('Stopping D (Violin)');            
+            console.log('Stopping A (Violin)');            
         }
         else {
             soundA = new Howl({
@@ -64,7 +64,7 @@ class Violin extends React.Component {
               });
             
             soundA.play();
-            console.log('Playing D (Violin)');            
+            console.log('Playing  A (Violin)');            
         }
     }
 
@@ -72,7 +72,7 @@ class Violin extends React.Component {
         if(soundE != null) {
             soundE.stop();
             soundE = null;
-            console.log('Stopping D (Violin)');            
+            console.log('Stopping E (Violin)');            
         }
         else {
             soundE = new Howl({
@@ -81,7 +81,7 @@ class Violin extends React.Component {
               });
             
               soundE.play();
-            console.log('Playing D (Violin)');            
+            console.log('Playing E (Violin)');            
         }
     }
 
@@ -90,12 +90,15 @@ class Violin extends React.Component {
         return (
             <div id="instruBox">
                 <p>Violin</p>
-                <ButtonGroup>
-                    <Button onClick={this.playG}>G</Button>
-                    <Button onClick={this.playD}>D</Button>
-                    <Button onClick={this.playA}>A</Button>
-                    <Button onClick={this.playE}>E</Button>
-                </ButtonGroup>
+                
+                <ButtonToolbar>
+                    <ToggleButtonGroup type="checkbox" name="options" justified>
+                        <ToggleButton value={1} onChange={this.playG}>G</ToggleButton>
+                        <ToggleButton value={2} onChange={this.playD}>D</ToggleButton>
+                        <ToggleButton value={3} onChange={this.playA}>A</ToggleButton>
+                        <ToggleButton value={4} onChange={this.playE}>E</ToggleButton>
+                    </ToggleButtonGroup>
+                </ButtonToolbar>
             </div>
         );
       }
