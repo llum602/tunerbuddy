@@ -2,16 +2,14 @@ import React, {Component} from 'react'
 import './index.css';
 import InstruMain from './InstruMain';
 import { Link } from 'react-router-dom';
-import { DropdownButton, MenuItem, ButtonToolbar, Button} from 'react-bootstrap';
+import { DropdownButton, MenuItem, Button} from 'react-bootstrap';
 
 import sleepingBuddy from'./sleepingBuddy.png';
 
 class Tuner extends React.Component {
 
   render() {
-    function onViolin() {
-      
-    }
+    
     return (
       <div>
         <div id="lBox">
@@ -24,8 +22,8 @@ class Tuner extends React.Component {
         <div id="buddyBox">
           <img src={sleepingBuddy} className={"buddy"} alt="TunerBud"/>
         </div>
-        <br/><br/><br/><br/><br/>
-        <div>
+        <br/><br/>
+        <div id="instruBox">
           <InstruMain />
         </div>
       </div>

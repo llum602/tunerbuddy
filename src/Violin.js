@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
 import './index.css';
 import './App.css'
-import { Link } from 'react-router-dom'
-import { ButtonGroup, Button, ButtonToolbar, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
-import Synth, { Tone } from 'tone'
+import { Button, ButtonToolbar, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
 import {Howl} from 'howler'
 
 import testSound from './testAudio.mp3';
@@ -88,17 +86,18 @@ class Violin extends React.Component {
       render() {
 
         return (
-            <div id="instruBox">
+            <div>
                 <p>Violin</p>
-                
-                <ButtonToolbar>
-                    <ToggleButtonGroup type="checkbox" name="options" justified>
-                        <ToggleButton value={1} onChange={this.playG}>G</ToggleButton>
-                        <ToggleButton value={2} onChange={this.playD}>D</ToggleButton>
-                        <ToggleButton value={3} onChange={this.playA}>A</ToggleButton>
-                        <ToggleButton value={4} onChange={this.playE}>E</ToggleButton>
-                    </ToggleButtonGroup>
-                </ButtonToolbar>
+                <div id="toggleBox">
+                    <ButtonToolbar>
+                        <ToggleButtonGroup type="checkbox" name="options" justified>
+                            <ToggleButton value={1} onChange={this.playG}>G</ToggleButton>
+                            <ToggleButton value={2} onChange={this.playD}>D</ToggleButton>
+                            <ToggleButton value={3} onChange={this.playA}>A</ToggleButton>
+                            <ToggleButton value={4} onChange={this.playE}>E</ToggleButton>
+                        </ToggleButtonGroup>
+                    </ButtonToolbar>
+                </div>
             </div>
         );
       }

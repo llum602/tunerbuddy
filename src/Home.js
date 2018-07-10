@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.css';
 import './App.css'
-import { Link } from 'react-router-dom'
 import sleepingBuddy from'./sleepingBuddy.png';
 
 
