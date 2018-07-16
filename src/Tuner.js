@@ -22,7 +22,7 @@ class Tuner extends React.Component {
         <div id="buddyBox">
           <img src={sleepingBuddy} className={"buddy"} alt="TunerBud"/>
         </div>
-        <br/><br/>
+        <br/>
         <div id="instruBox">
           <InstruMain />
         </div>

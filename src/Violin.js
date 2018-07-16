@@ -8,6 +8,7 @@ import testSound from './testAudio.mp3';
 import pitchD from './pitchD.wav';
 import pitchA from './pitchA.wav';
 import pitchE from './pitchE.wav';
+import pitchG from './pitchG.wav';
 
 var sound = null;   
 var soundD = null;
@@ -23,7 +24,7 @@ class Violin extends React.Component {
         }
         else {
             sound = new Howl({
-                src: testSound,
+                src: pitchG,
                 loop: true
               });
             
@@ -87,7 +88,7 @@ class Violin extends React.Component {
 
         return (
             <div>
-                <p>Violin</p>
+                <div className="instruTitles"><h2><b>Violin</b></h2></div>
                 <div id="toggleBox">
                     <ButtonToolbar>
                         <ToggleButtonGroup type="checkbox" name="options" justified>
