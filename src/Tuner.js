@@ -15,16 +15,25 @@ class Tuner extends React.Component {
         <div id="lBox">
           <p></p>
           <DropdownButton title="Instruments">
-            <MenuItem eventKey="1"><Button bsStyle="link"><Link to='/Tuner/Violin'>Violin</Link></Button></MenuItem>
-            <MenuItem eventKey="2"><Button bsStyle="link"><Link to='/Tuner/Guitar'>Guitar</Link></Button></MenuItem>
+            <Link to='/Tuner/Violin'><MenuItem eventKey="1"><div id="menuItemTitles">Violin</div></MenuItem></Link>
+            <Link to='/Tuner/Guitar'><MenuItem eventKey="2"><div id="menuItemTitles">Guitar</div></MenuItem></Link>
           </DropdownButton>
         </div>
+
         <div id="buddyBox">
           <img src={sleepingBuddy} className={"buddy"} alt="TunerBud"/>
         </div>
+
         <br/>
+
         <div id="instruBox">
           <InstruMain />
+        </div>
+
+        <br/>
+
+        <div id="helperBox">
+
         </div>
       </div>
     );

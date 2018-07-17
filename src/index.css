@@ -33,6 +33,15 @@ a {
   outline: 2px dashed rgb(129, 129, 129);
 }
 
+#helperBox {
+  width: 46%;
+  height: 50%;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+  outline: 2px dashed rgb(129, 129, 129);
+}
+
 #toggleBox {
   align-content: center;
   margin: 10px;
@@ -44,6 +53,11 @@ a {
 
 .instruTitles {
   padding: 10px;
+}
+
+#menuItemTitles {
+  padding: 10px;
+  text-decoration: none;
 }
 
 /* header */
