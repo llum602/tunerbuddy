@@ -1,13 +1,13 @@
 import React from 'react'
 import './index.css';
 import './App.css'
-import sleepingBuddy from'./sleepingBuddy.png';
+import sleepingCat from './sleepingCat.png';
 
 
 
 const Home = () => (
     <div>
-        <img src={sleepingBuddy} className={"buddy"} alt="TunerBud"/>
+        <img src={sleepingCat} className={"buddy"} alt="TunerBud"/>
     </div>
 )
 

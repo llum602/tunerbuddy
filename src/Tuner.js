@@ -4,7 +4,7 @@ import InstruMain from './InstruMain';
 import { Switch, Link, Route } from 'react-router-dom';
 import { DropdownButton, MenuItem, Button} from 'react-bootstrap';
 
-import sleepingBuddy from'./sleepingBuddy.png';
+import awakeCat from './awakeCat.png';
 import Violin from './Violin'
 import Guitar from './Guitar'
 import Viola from './Viola'
@@ -35,7 +35,7 @@ class Tuner extends React.Component {
         </div>
 
         <div id="buddyBox">
-          <img src={sleepingBuddy} className={"buddy"} alt="TunerBud"/>
+          <img src={awakeCat} className={"buddy"} alt="TunerBud"/>
         </div>
 
         <br/>
